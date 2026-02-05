@@ -31,12 +31,12 @@ plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 #desktop = os.path.join(os.environ["USERPROFILE"], "Desktop")
 #file_path = os.path.join(desktop, "popmart_sales.xlsx")
 
-try:
+#try:
     #df = pd.read_excel(file_path)
-    df['date'] = pd.to_datetime(df['date'])
-    print(f"✅ 数据加载成功，共 {len(df)} 条记录")
-except Exception as e:
-    print(f"❌ 数据加载失败: {e}")
+    #df['date'] = pd.to_datetime(df['date'])
+    #print(f"✅ 数据加载成功，共 {len(df)} 条记录")
+#except Exception as e:
+    #print(f"❌ 数据加载失败: {e}")
     # 创建模拟数据供演示
     ... # 删除所有模拟数据代码
 
@@ -1660,3 +1660,4 @@ button.gallery-item:hover {
         """
 
     )
+
