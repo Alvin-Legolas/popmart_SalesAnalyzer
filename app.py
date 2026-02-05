@@ -28,11 +28,11 @@ plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 # ==============================
 # 3>加载 Excel 数据
 # ==============================
-desktop = os.path.join(os.environ["USERPROFILE"], "Desktop")
-file_path = os.path.join(desktop, "popmart_sales.xlsx")
+#desktop = os.path.join(os.environ["USERPROFILE"], "Desktop")
+#file_path = os.path.join(desktop, "popmart_sales.xlsx")
 
 try:
-    df = pd.read_excel(file_path)
+    #df = pd.read_excel(file_path)
     df['date'] = pd.to_datetime(df['date'])
     print(f"✅ 数据加载成功，共 {len(df)} 条记录")
 except Exception as e:
@@ -1658,4 +1658,5 @@ button.gallery-item:hover {
      color: #000000 !important;
  }
         """
+
     )
