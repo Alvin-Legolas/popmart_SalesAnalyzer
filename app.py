@@ -216,7 +216,7 @@ def get_smart_suggestions(user_id="default"):
     # 1. 基于热门数据
     hot_ip = df.groupby('ip')['sales'].sum().idxmax()
     hot_region = df.groupby('region')['sales'].sum().idxmax()
-    suggestions.append(f"{hot_ip}在{hot_region}最近表现怎样？")
+    suggestions.append(f"{hot_ip}在{hot_region}最近销售怎样？")
 
     # 2. 基于增长趋势
     growth_data = []
@@ -249,9 +249,9 @@ def get_smart_suggestions(user_id="default"):
     suggestions.append("<span style='color: black;'>对比一下Molly和Dimoo的销量</span>")
     suggestions.append("<span style='color: black;'>最近7天各区域销量排名</span>")
     suggestions.append("<span style='color: black;'>哪个IP增长最快？</span>")
-    suggestions.append("<span style='color: black;'>Dimoo在华南最近表现怎样？</span>")
+    suggestions.append("<span style='color: black;'>Dimoo在华南最近销售怎样？</span>")
     suggestions.append("<span style='color: black;'>Dimoo为什么增长这么快？(+17.5%)</span>")
-    suggestions.append("<span style='color: black;'>Dimoo在华南最近表现怎样？</span>")
+    suggestions.append("<span style='color: black;'>Dimoo在华南最近销售怎样？</span>")
 
     return list(set(suggestions))[:6]  # 去重并限制数量
 
@@ -1660,5 +1660,6 @@ button.gallery-item:hover {
         """
 
     )
+
 
 
