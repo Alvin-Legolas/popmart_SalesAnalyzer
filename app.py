@@ -1475,7 +1475,7 @@ if __name__ == "__main__":
         /*1. 修改主界面背景色 */
          /* 修改主界面背景色 */
         .gradio-container {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background: linear-gradient(135deg, #F0C9A2 0%, #F5D4B8 25%, #D6E7F2 55%, #769DB9 100%) !important;
         padding: 20px !important;
         min-height: 100vh !important;
         }
@@ -1660,6 +1660,7 @@ button.gallery-item:hover {
         """
 
     )
+
 
 
 
